@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_chooseImg"
+        android:title="Choose Image" />
+    <item android:title="Open Camera"
+        android:id="@+id/item_openCamera"
+        />
+    <item android:title="Open Gallery"
+        android:id="@+id/item_openGallery"
+        />
+</menu>

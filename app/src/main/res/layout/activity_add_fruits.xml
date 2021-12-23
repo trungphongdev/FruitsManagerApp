@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFruits">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageViewFruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/apple"
+            android:onClick="popUpImg"/>
+
+        <EditText
+        android:id="@+id/editTextIDFruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="ID"
+        android:fontFamily="@font/lobster"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewFruit"
+        app:layout_constraintStart_toStartOf="@+id/imageViewFruit"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFruit" />
+
+    <EditText
+        android:id="@+id/editTextNameFruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:fontFamily="@font/lobster"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextIDFruit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextIDFruit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIDFruit" />
+
+    <EditText
+        android:id="@+id/editTextCountFruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Count"
+        android:fontFamily="@font/lobster"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNameFruit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextNameFruit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNameFruit" />
+
+    <EditText
+        android:id="@+id/editTextPriceFruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Price"
+        android:fontFamily="@font/lobster"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCountFruit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextCountFruit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCountFruit" />
+
+    <Spinner
+        android:id="@+id/spinnerCategoryFruit"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/lobster"
+        app:layout_constraintEnd_toEndOf="@+id/editTextProducer"
+        app:layout_constraintStart_toStartOf="@+id/editTextProducer"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProducer" />
+
+    <Button
+        android:id="@+id/buttonAddFruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Add"
+        android:textColor="@android:color/white"
+        android:background="@drawable/designbutton"
+        android:fontFamily="@font/lobster"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerCategoryFruit"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCategoryFruit"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCategoryFruit" />
+
+    <EditText
+        android:id="@+id/editTextProducer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Producer"
+        android:fontFamily="@font/lobster"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextPriceFruit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextPriceFruit"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPriceFruit" />
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="Update"
+            android:textColor="@android:color/white"
+            android:background="@drawable/designbutton"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerCategoryFruit"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="@+id/spinnerCategoryFruit"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCategoryFruit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".CalcData">
+
+    <TextView
+        android:id="@+id/textViewCountStaff"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/lobster"
+        android:text="Click to calc count Staffs"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCountFruits"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/lobster"
+        android:text="Click to calc count Fruits and Vegetable"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCountStaff"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewCountStaff"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCountStaff" />
+
+    <TextView
+        android:id="@+id/textViewTotalprice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/lobster"
+        android:text="Click to calc toal price "
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCountFruits"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCountFruits" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="167dp"
+        android:fontFamily="@font/lobster"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTotalprice"
+        app:layout_constraintStart_toStartOf="@+id/textViewTotalprice"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalprice" />
+
+    <Button
+        android:id="@+id/buttonCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="out"
+        android:textColor="@android:color/white"
+        android:background="@drawable/designbutton"
+        app:layout_constraintEnd_toEndOf="@+id/textViewResult"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/textViewResult"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
+</androidx.constraintlayout.widget.ConstraintLayout>

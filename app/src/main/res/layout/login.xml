@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="191dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/shopping"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/lobster"
+        android:gravity="center"
+        android:text="World Fruits"
+        android:textColor="#7431EC"
+        android:textColorLink="#FFFFFF"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edittext_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:fontFamily="@font/lobster_two"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edittext_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/lobster_two"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edittext_User"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edittext_User"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_User" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/lobster"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:background="@drawable/designbutton"
+        app:layout_constraintEnd_toEndOf="@+id/edittext_Password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edittext_Password"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_Password" />
+
+    <TextView
+        android:id="@+id/textview_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/lobster_two"
+        android:text="Sign Up"
+        app:layout_constraintStart_toEndOf="@+id/textview_forgotPassword"
+        app:layout_constraintTop_toTopOf="@+id/textview_forgotPassword" />
+
+    <TextView
+        android:id="@+id/textview_forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lobster_two"
+        android:text="Forgot Password"
+        app:layout_constraintStart_toStartOf="@+id/button_login"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+    <TextView
+        android:id="@+id/textview_wrongPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster"
+        android:text="TextView"
+        android:textColor="#F62424"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_Password"
+        app:layout_constraintStart_toStartOf="@+id/edittext_Password"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textview_wrongUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobster_two"
+        android:text="TextView"
+        android:textColor="#FF1010"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/edittext_User"
+        app:layout_constraintStart_toStartOf="@+id/edittext_User"
+        tools:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/lobster_two"
+        android:text="Remember Password"
+        app:layout_constraintBottom_toTopOf="@+id/button_login"
+        app:layout_constraintStart_toStartOf="@+id/edittext_Password"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_Password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
